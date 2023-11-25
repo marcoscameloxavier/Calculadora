@@ -17,14 +17,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.088"
         app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/tv_Titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:text="Calculadora"
+        android:text="@string/calculator_title"
         android:textColor="@color/material_dynamic_tertiary50"
         android:textSize="34sp"
         android:textStyle="normal|bold"
@@ -39,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="148dp"
         android:onClick="buttonDivClick"
-        android:text="/"
+        android:text="@string/division_sign"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toEndOf="@+id/etn_number1"
@@ -51,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="148dp"
         android:onClick="buttonMultClick"
-        android:text="*"
+        android:text="@string/multiplication_sign"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.27"
         app:layout_constraintStart_toEndOf="@+id/btn_soma"
@@ -63,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="92dp"
         android:onClick="buttonSomaClick"
-        android:text="+"
+        android:text="@string/sum_sign"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toEndOf="@+id/etn_number1"
@@ -87,7 +88,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
-        android:text="Result:"
+        android:text="@string/result"
         android:textColor="@color/design_default_color_secondary_variant"
         android:textSize="28sp"
         android:textStyle="bold"
@@ -98,22 +99,22 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="188dp"
-        android:layout_height="43dp"
+        android:layout_width="181dp"
+        android:layout_height="45dp"
         android:onClick="buttonClearClick"
-        android:text="CLEAR"
+        android:text="@string/clear"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintHorizontal_bias="0.92"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_mult"
-        app:layout_constraintVertical_bias="0.028" />
+        app:layout_constraintVertical_bias="0.026" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Number 2:"
+        android:text="@string/number_2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.078"
@@ -127,7 +128,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="92dp"
         android:onClick="buttonSubClick"
-        android:text="-"
+        android:text="@string/minus_sign"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.27"
         app:layout_constraintStart_toEndOf="@+id/btn_soma"
@@ -143,13 +144,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.088"
         app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Number 1:"
+        android:text="@string/number_1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.078"
@@ -178,6 +180,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/calc2" />
+        app:srcCompat="@drawable/calc2"
+        android:contentDescription="@string/ctdescript_calculadora" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

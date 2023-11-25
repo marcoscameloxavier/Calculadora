@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Calculadora</string>
+    <string name="calculator_title">Calculadora</string>
+    <string name="division_sign">/</string>
+    <string name="multiplication_sign">*</string>
+    <string name="sum_sign">+</string>
+    <string name="minus_sign">-</string>
+    <string name="result">Result:</string>
+    <string name="clear">CLEAR</string>
+    <string name="number_2">Number 2:</string>
+    <string name="number_1">Number 1:</string>
+    <string name="ctdescript_calculadora">Imagem de calculadora</string>
 </resources>
